@@ -9,11 +9,18 @@ import Effect from './component/Effect';
 import Solution from './component/Solution';
 import GlobvsCli from './component/GlobvsCli';
 import Footer from './component/Footer';
+import { Auth0Provider } from "@auth0/auth0-react";
+import Challanges from './component/Challanges';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  
     <BrowserRouter>
+    <Auth0Provider
+    domain="dev-2b2ao3amfvhocg53.us.auth0.com"
+    clientId="3k4soPmwC4hJEJNgeydw0h32fhvj35SM"
+    redirectUri={window.location.origin}
+  >
     <Routes>
     <Route path= "/"  element= {<App/>} />
       <Route path="/Causes"  element= {<Causes/>} />
@@ -22,10 +29,12 @@ root.render(
       <Route path='/Solution' element = {<Solution/>}/>
       <Route path='/Glob_vs_Cli' element = {<GlobvsCli/>}/>
       <Route path='/contact' element = {<Footer/>}/>
+      <Route path='/Quiz' element = {<Challanges/>}/>
     
     </Routes>
+    </Auth0Provider>
+    
     </BrowserRouter>
-  </React.StrictMode>
 );
 
 reportWebVitals();

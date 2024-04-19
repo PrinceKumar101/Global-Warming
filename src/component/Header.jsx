@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Header = () => {
   const [show, set_show] = useState(false);
+  const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
 
   return (
     <>
@@ -14,6 +15,23 @@ const Header = () => {
 
           <div className="pt-0 home_btn">
             <nav className='flex pt-5 pl-20 text-2xl "nav_bar" '>
+            {isAuthenticated && (
+            <li className=" list-none pr-10">
+              <p> {user.name}  </p>
+            </li>
+          )}
+            {isAuthenticated ? (
+            <li className=" list-none">
+              <button
+                onClick={() => logout({ returnTo: window.location.origin })}>
+                Log Out
+              </button>
+            </li>
+          ) : (
+            <li className=" list-none">
+              <button onClick={() => loginWithRedirect()}>Log In</button>
+            </li>
+          )}
               <a href="/">
                 <h2 className="pl-20">Home</h2>
               </a>
@@ -33,15 +51,39 @@ const Header = () => {
                 </button>
                 {show && (
                   <>
-                  <div className="flex flex-col gap-3 absolute z-50 pb-3 right-2  top-[65px">
-                  <a href="/Causes" className=" hover:bg-slate-700 rounded-lg p-[1.5px]">Causes</a>
-                  <a href="/Effect" className=" hover:bg-slate-700 rounded-lg p-[1.5px]">Effect</a>
-                  <a href="/Solution" className=" hover:bg-slate-700 rounded-lg p-[1.5px]">Solutions</a>
+                    <div className="flex flex-col gap-3 absolute z-50 pb-3 right-2  top-[65px">
+                      <a
+                        href="/Causes"
+                        className=" hover:bg-slate-700 rounded-lg p-[1.5px]"
+                      >
+                        Causes
+                      </a>
+                      <a
+                        href="/Effect"
+                        className=" hover:bg-slate-700 rounded-lg p-[1.5px]"
+                      >
+                        Effect
+                      </a>
+                      <a
+                        href="/Solution"
+                        className=" hover:bg-slate-700 rounded-lg p-[1.5px]"
+                      >
+                        Solutions
+                      </a>
 
-                  <a href="/Glob_vs_cli" className=" hover:bg-slate-700 rounded-lg p-[1.5px] text-lg">Global Warming <br /> vs  climate change</a>
-                  </div>
-                   
-          
+                      <a
+                        href="/Glob_vs_cli"
+                        className=" hover:bg-slate-700 rounded-lg p-[1.5px] text-lg"
+                      >
+                        Global Warming <br /> vs climate change
+                      </a>
+                      <a
+                        href="/Quiz"
+                        className=" hover:bg-slate-700 rounded-lg p-[1.5px] text-lg"
+                      >
+                        Quiz
+                      </a>
+                    </div>
                   </>
                 )}
               </div>
