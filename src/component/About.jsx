@@ -22,9 +22,7 @@ const About = () => {
         <div className='flex justify-end '>
             <div className="bottom text-1xl w-5/12  pr-7 pt-10">
                 <p className=' p-4 pb-8'>{elem.after_underline}</p>
-                <div className="btn_learn_more text-2xl border-2 w-fit rounded-full p-3">
-                    <button>Learn More</button>
-                </div>
+                
             </div>
         </div>
     </div>

@@ -20,12 +20,12 @@ const Connections = () => {
     {
       text: "solution",
       image: "./Images/solution.jpg",
-      link: "/Solutions",
+      link: "/Solution",
     }
   ];
   return (
     <>
-      <div className="main  p-4 ">
+      <div className="main  p-4 pb-10 ">
         <div className="capitalize text-6xl font-bold py-20 pl-10 ">
           follow us
         </div>
@@ -41,7 +41,7 @@ const Connections = () => {
                   />
                   <div className="text-gray-100 text-center">
                     <span>
-                      <p>{elem.text}</p>
+                      <p className=" capitalize text-xl font-medium">{elem.text}</p>
                     </span>
                   </div>
                 </p>

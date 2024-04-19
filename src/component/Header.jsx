@@ -14,13 +14,13 @@ const Header = () => {
 
           <div className="pt-0 home_btn">
             <nav className='flex pt-5 pl-20 text-2xl "nav_bar" '>
-              <a href="{#}">
-                <h2 className="pl-20">Home</h2>{" "}
+              <a href="/">
+                <h2 className="pl-20">Home</h2>
               </a>
-              <a href="{#}">
+              <a href="/about us">
                 <h2 className="pl-20 ">About Us</h2>
               </a>
-              <a href="{#}">
+              <a href="/contact">
                 <h2 className="pl-20 ">Contact Us</h2>
               </a>
 
@@ -35,10 +35,10 @@ const Header = () => {
                   <>
                   <div className="flex flex-col gap-3 absolute z-50 pb-3 right-2  top-[65px">
                   <a href="/Causes" className=" hover:bg-slate-700 rounded-lg p-[1.5px]">Causes</a>
-                  <a href="{#}" className=" hover:bg-slate-700 rounded-lg p-[1.5px]">Effect</a>
-                  <a href="{#}" className=" hover:bg-slate-700 rounded-lg p-[1.5px]">Solutions</a>
+                  <a href="/Effect" className=" hover:bg-slate-700 rounded-lg p-[1.5px]">Effect</a>
+                  <a href="/Solution" className=" hover:bg-slate-700 rounded-lg p-[1.5px]">Solutions</a>
 
-                  <a href="{#}" className=" hover:bg-slate-700 rounded-lg p-[1.5px] text-lg">Global Warming <br /> vs  climate change</a>
+                  <a href="/Glob_vs_cli" className=" hover:bg-slate-700 rounded-lg p-[1.5px] text-lg">Global Warming <br /> vs  climate change</a>
                   </div>
                    
           
