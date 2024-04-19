@@ -5,7 +5,7 @@ const Hero = () => {
     <>
     <div className='cont1 z-2 pt-4 relative flex'>
       <div className='image1 relative '>
-        <img className=' z-3 brightness-50 relative' src='./images/hero_img_1.webp' alt='hero section'/>
+        <img className=' z-3 brightness-50 relative' src='Images/hero_img_1.webp' alt='hero section'/>
       </div>
       <div className='hero_text absolute top-52 left-28 pt-20'>
         <h3 className='text-5xl'>Inspiring Change</h3>
