@@ -1,20 +1,16 @@
 import React from "react";
 import Header from "./Header";
+import Footer from "./Footer";
 
 const Solution = () => {
   return (
     <>
-    <Header/>
+      <Header />
       <div className="p-5">
-        <h1
-          className=" text-4xl text-center tracking-wide"
-        >
+        <h1 className=" text-4xl text-center tracking-wide">
           WHAT CAN WE DO ?
         </h1>
-        <h4
-          className="text-center text-2xl tracking-wide "
-          
-        >
+        <h4 className="text-center text-2xl tracking-wide ">
           <br />
           Healing the planet starts in your garage, in your kitchen, and at your
           dining room table.
@@ -92,9 +88,7 @@ const Solution = () => {
           <br />
           When shopping for refrigerators, washing machines,
           <a href="https://www.nrdc.org/stories/whats-most-energy-efficient-water-heater">
-            <span className="text-blue-600">
-              heat pump water heaters
-            </span>
+            <span className="text-blue-600">heat pump water heaters</span>
           </a>
           , and other appliances, look for the
           <a href="http://www.energystar.gov/">
@@ -116,11 +110,9 @@ const Solution = () => {
           <br />
           <strong>5. DRIVE FUEL EFFICIENT VEHICLES OR USE E-VEHICLES</strong>
           <br />
-          Gas-smart cars, such as hybrids and fully electric vehicles,  
-          &nbsp;<a   href="https://www.nrdc.org/stories/now-good-time-buy-electric-car">
-            <span className="text-blue-600">
-              save fuel and money
-            </span>
+          Gas-smart cars, such as hybrids and fully electric vehicles, &nbsp;
+          <a href="https://www.nrdc.org/stories/now-good-time-buy-electric-car">
+            <span className="text-blue-600">save fuel and money</span>
           </a>
           <span style={{ color: "rgb(11, 11, 11)" }}>.</span> And once all cars
           and light trucks meet 2025’s clean car standards, which means
@@ -145,25 +137,22 @@ const Solution = () => {
           recycle or compost more than one-third of our trash. In 2014 this
           saved carbon emissions equivalent to the yearly output of{" "}
           <a href="https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/advancing-sustainable-materials-management-0">
-            <span className="text-blue-600">
-              38 million passenger cars
-            </span>
+            <span className="text-blue-600">38 million passenger cars</span>
           </a>
           . Search your municipality’s sanitation department (or equivalent)
           webpage to learn exactly what you can place in the recycling bin, as
           counties and cities often differ in what they accept.
-          
         </p>
         <iframe
-          allowFullScreen 
+          allowFullScreen
           title="..."
-          
           src="https://www.youtube.com/embed/YoZF16PZYoU"
           width={560}
           height={315}
           className=" "
         />
       </div>
+      <Footer/>
     </>
   );
 };

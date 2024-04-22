@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from './Header';
+import Footer from './Footer';
 
 const GlobvsCli = () => {
   return (
@@ -53,6 +54,7 @@ const GlobvsCli = () => {
           style={{ marginTop: 46, marginLeft: 231 }}
         />
       </div>
+      <Footer/>
     </>
   );
 }

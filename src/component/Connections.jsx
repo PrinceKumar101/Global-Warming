@@ -21,7 +21,7 @@ const Connections = () => {
       text: "solution",
       image: "./Images/solution.jpg",
       link: "/Solution",
-    }
+    },
   ];
   return (
     <>
@@ -31,17 +31,19 @@ const Connections = () => {
         </div>
         <div className="img_scroll flex gap-5 overflow-hidden px-7 py-4">
           {data.map((elem, index) => (
-            <a _blank href= {elem.link} className="w-[500px] h-[500px] flex flex-col gap-3 items-center justify-center">
+            <a
+              _blank
+              href={elem.link}
+              className="w-[500px] h-[500px] flex flex-col gap-3 items-center justify-center"
+            >
               <div className="flex flex-col">
                 <p>
-                  <img
-                    src={elem.image}
-                    className="w-full h-full"
-                    alt="..."
-                  />
+                  <img src={elem.image} className="w-full h-full" alt="..." />
                   <div className="text-gray-100 text-center">
                     <span>
-                      <p className=" capitalize text-xl font-medium">{elem.text}</p>
+                      <p className=" capitalize text-xl font-medium">
+                        {elem.text}
+                      </p>
                     </span>
                   </div>
                 </p>

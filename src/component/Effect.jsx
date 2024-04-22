@@ -1,18 +1,21 @@
 import React from "react";
 import Header from "./Header";
+import Footer from "./Footer";
 
 const Effect = () => {
   return (
     <>
-    <Header/>
+      <Header />
       <div id="cont1" className=" text-5xl p-6">
-        <h1 className=" text-center font-semibold tracking-wide">What are the effects of global warming?</h1>
+        <h1 className=" text-center font-semibold tracking-wide">
+          What are the effects of global warming?
+        </h1>
       </div>
 
       <div id="cont2" className="p-5 pl-20 text-base">
         <p className="text-3xl text-center">
-          The signs of global warming are everywhere, and are more complex <br /> than
-          just climbing temperatures.
+          The signs of global warming are everywhere, and are more complex{" "}
+          <br /> than just climbing temperatures.
           <br />
           <img alt="..." src="Images/Effects-tryptich.webp" />
           <br />
@@ -50,7 +53,7 @@ const Effect = () => {
         <p>
           <br />
           <strong className=" text-xl leading-9 font-bold">
-            <span >• </span>Hotter days:
+            <span>• </span>Hotter days:
           </strong>
           <br />
           2015 was the hottest year on record, the previous record was broken in
@@ -179,7 +182,7 @@ const Effect = () => {
           homes, as well as more costly insurance premiums. &nbsp; <br />
           <br />
           <strong className=" text-xl leading-9 font-bold">
-          <span>•</span> Coral bleaching:
+            <span>•</span> Coral bleaching:
           </strong>
           <br />
           <br />
@@ -191,20 +194,22 @@ const Effect = () => {
       </div>
 
       <div id="cont4" className="">
-        <img className=" h-3/6 w-3/6"
+        <img
+          className=" h-3/6 w-3/6"
           alt="..."
           src="Images/img-burnt-forest-western-australia-1000x600.jpg"
         />
       </div>
       <div id="cont5" className="pl-52">
-        <iframe className="h-[500px] w-3/6"
+        <iframe
+          className="h-[500px] w-3/6"
           allowFullScreen
           frameBorder={0}
           title="..."
           src="https://www.youtube.com/embed/uynhvHZUOOo"
         />
       </div>
-      
+      <Footer/>
     </>
   );
 };
