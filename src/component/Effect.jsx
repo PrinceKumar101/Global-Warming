@@ -209,7 +209,7 @@ const Effect = () => {
           src="https://www.youtube.com/embed/uynhvHZUOOo"
         />
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

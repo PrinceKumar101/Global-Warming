@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import Footer from "./Footer"
+import Footer from "./Footer";
 
 const Causes = () => {
   return (
@@ -287,7 +287,7 @@ const Causes = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

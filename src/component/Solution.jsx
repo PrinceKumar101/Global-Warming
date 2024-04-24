@@ -152,7 +152,7 @@ const Solution = () => {
           className=" "
         />
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

@@ -1,20 +1,17 @@
-import React from 'react'
-import Header from './Header';
-import Footer from './Footer';
+import React from "react";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const GlobvsCli = () => {
   return (
     <>
-    <Header/>
-    
-      <div id="main " className=' p-10 pt-2'>
-        <h1
-         className=' text-4xl text-center font-semibold p-3 '
-        >
+      <Header />
+
+      <div id="main " className=" p-10 pt-2">
+        <h1 className=" text-4xl text-center font-semibold p-3 ">
           <br />
           What is the difference between global warming and climate change?
           <br />
-          
           <br />
         </h1>
         <p
@@ -38,7 +35,7 @@ const GlobvsCli = () => {
           <br />
         </p>
         <img
-        alt='...'
+          alt="..."
           src="Images/Capture.jpg"
           style={{ marginLeft: 162, position: "relative", textAlign: "center" }}
           width={672}
@@ -46,7 +43,7 @@ const GlobvsCli = () => {
         />
         <iframe
           allowFullScreen
-          title='...'
+          title="..."
           frameBorder={0}
           src="https://www.youtube.com/embed/HGEkXQx9dP0"
           width={560}
@@ -54,9 +51,9 @@ const GlobvsCli = () => {
           style={{ marginTop: 46, marginLeft: 231 }}
         />
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
-}
+};
 
-export default GlobvsCli
+export default GlobvsCli;

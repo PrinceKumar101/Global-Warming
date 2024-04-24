@@ -22,7 +22,7 @@ const About = () => {
             <div className="flex justify-end ">
               <div className="bottom text-1xl w-5/12  pr-7 pt-10">
                 <p className=" p-4 pb-8">{elem.after_underline}</p>
-              </div>  
+              </div>
             </div>
           </div>
         ))}

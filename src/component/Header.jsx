@@ -15,23 +15,24 @@ const Header = () => {
 
           <div className="pt-0 home_btn">
             <nav className='flex pt-5 pl-20 text-2xl "nav_bar" '>
-            {isAuthenticated && (
-            <li className=" list-none pr-10">
-              <p> {user.name}  </p>
-            </li>
-          )}
-            {isAuthenticated ? (
-            <li className=" list-none">
-              <button
-                onClick={() => logout({ returnTo: window.location.origin })}>
-                Log Out
-              </button>
-            </li>
-          ) : (
-            <li className=" list-none">
-              <button onClick={() => loginWithRedirect()}>Log In</button>
-            </li>
-          )}
+              {isAuthenticated && (
+                <li className=" list-none pr-10">
+                  <p> {user.name} </p>
+                </li>
+              )}
+              {isAuthenticated ? (
+                <li className=" list-none">
+                  <button
+                    onClick={() => logout({ returnTo: window.location.origin })}
+                  >
+                    Log Out
+                  </button>
+                </li>
+              ) : (
+                <li className=" list-none">
+                  <button onClick={() => loginWithRedirect()}>Log In</button>
+                </li>
+              )}
               <a href="/">
                 <h2 className="pl-20">Home</h2>
               </a>
