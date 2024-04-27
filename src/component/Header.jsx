@@ -8,9 +8,11 @@ const Header = () => {
   return (
     <>
       <nav className="p-2 text-5xl bg-gray-950 h-35 underline-offset-3 navbar bg-body-tertiary">
+        
         <div className="flex justify-between text-5xl h-50 underline-offset-3 navbar bg-body-tertiary">
+          
           <h1 className="flex justify-center pt-5 align-middle">
-            Global Warming
+           Global Warming
           </h1>
 
           <div className="pt-0 home_btn">
